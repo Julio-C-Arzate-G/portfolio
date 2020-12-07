@@ -17,6 +17,7 @@ body {
   height: 70px;
   width: 100%;
   position: fixed;
+  z-index: 999;
 }
 .logo {
   height: 100%;
