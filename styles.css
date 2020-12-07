@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: #212121;
+  @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+  font-family: "Oxygen", sans-serif;
+}
+
+/* ===================MENU============= */
+.menu {
+  background-color: #1c1c1c;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+}
+.logo {
+  height: 100%;
+  line-height: 70px;
+  padding: 10px 50px;
+}
+.menu-list {
+  float: right;
+  margin-right: 10px;
+}
+
+.item-menu {
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 10px;
+  border-bottom: 1px solid #00bfff;
+}
+
+.link-menu {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.link-menu:hover {
+  color: #00bfff;
+  text-shadow: 0 0 10px white;
+}
+
+.check-btn {
+  font-size: 30px;
+  color: #00bfff;
+  float: right;
+  line-height: 70px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+/* ================= Main Section ===================== */
+.main {
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/1252890/pexels-photo-1252890.jpeg?cs=srgb&dl=pexels-hristo-fidanov-1252890.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: azure;
+  padding: 30px;
+}
+.banner {
+  width: 100%;
+  border: 2px solid azure;
+  padding: 10px;
+  box-shadow: 0 0.125rem 0.25rem rgba(255, 255, 255, 0.85);
+  text-shadow: 0 0 8px #00bfff;
+}
+.banner h3 {
+  font-weight: 400;
+}
+/* ================= About Me ===================== */
+.about-me {
+  margin: 140px 20px 20px 20px;
+  color: azure;
+  padding: 10px;
+  font-size: 17px;
+}
+.heading {
+  padding: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  background-color: azure;
+  border-radius: 50%;
+  margin: 50px auto;
+  background-image: url(mi-foto.jpg);
+  background-size: cover;
+  align-items: center;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 191, 255, 0.9);
+}
+
+.title-section {
+  font-size: 36px;
+  color: azure;
+  text-align: center;
+  margin-bottom: 50px;
+  text-shadow: 0 0 3px #00bfff;
+}
+.text {
+  margin: 30px;
+  color: azure;
+  text-shadow: 0 0 3px #00bfff;
+}
+
+/* =====================SKILLS=============================== */
+
+.heading-skills {
+  margin: 30px;
+  color: azure;
+  text-shadow: 0 0 3px #00bfff;
+  font-size: 17px;
+}
+.container-skills {
+  margin-bottom: 50px;
+}
+.container-icon-skills {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.icon-skills {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid silver;
+  border-radius: 10px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 191, 255, 0.9);
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.icon-html {
+  background-image: url(HTML5_Logo_256.png);
+}
+.icon-css {
+  background-image: url(css3.png);
+}
+.icon-git {
+  background-image: url(Git-Icon-1788C.png);
+}
+.icon-js {
+  background-image: url(Javascript-shield.png);
+}
+.icon-python {
+  background-image: url(python.png);
+}
+.icon-react {
+  background-image: url(React-icon.svg.png);
+}
+.overlay {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0 0 10px #00bfff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  border-radius: 10px;
+}
+.icon-skills:hover .overlay {
+  top: 0;
+}
+
+/* ==============Contact=============== */
+.contact-section {
+  margin: 30px;
+}
+.form-container {
+  text-align: center;
+}
+.form-control {
+  background-color: azure;
+  color: #212121;
+  border: 1px solid 00bfff;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 0 0.1rem 0.2rem #00bfff;
+  box-sizing: border-box;
+  margin: 20px auto;
+  /* display: inline-block; */
+  width: 80%;
+}
+.adress-container {
+  text-align: center;
+}
+.adress-text {
+  margin: 30px;
+  color: #00bfff;
+  /* text-align: center; */
+  font-size: 1.1rem;
+}
+.center-text {
+  text-align: center;
+}
+
+.icon-contact {
+  color: #00bfff;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.social-icons-content {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-icon {
+  color: #00bfff;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+.social-icon:hover {
+  color: white;
+  text-shadow: 0 0 10px #00bfff;
+}
+/* ==============Footer=============== */
+.last-section {
+  padding: 40px 40px 70px;
+  background-color: black;
+  width: 100%;
+}
+.follow {
+  font-size: 30px;
+}
+
+/* ==================Components============== */
+.card {
+  background-color: black;
+  padding: 30px;
+  box-shadow: 0 0.025rem 0.525rem rgba(0, 191, 255, 0.9);
+}
+
+.card-text {
+  padding-bottom: 30px;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.primary-button {
+  background-color: #c0c0c0;
+  color: black;
+  /* separar el boton de la imagen */
+  /* margin: 10px; */
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0.125rem 0.25rem #00bfff;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 50rem;
+  padding: 20px 40px;
+  margin-bottom: 2rem;
+}
+
+.primary-button:hover {
+  background-color: #00bfff;
+  color: white;
+  box-shadow: 0 0.125rem 0.25rem white;
+}
+
+.heading-separator {
+  width: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #00bfff;
+  margin-bottom: 50px;
+}
+
+/* ===============Helpers=========== */
+.space-top {
+  margin-top: 30px;
+}
+.space-top p {
+  font-size: 1.1rem;
+}
+.title-section {
+  font-size: 36px;
+  color: azure;
+  text-align: center;
+  margin-bottom: 50px;
+  text-shadow: 0 0 3px #00bfff;
+}
+.text {
+  margin: 30px;
+  color: azure;
+  text-shadow: 0 0 3px #00bfff;
+  text-align: center;
+}
+.subtitles {
+  font-size: 20px;
+}
+.cont-section {
+  border-bottom: 1px solid silver;
+  margin: 30px;
+}
+
+/* =========================================hover======================================================= */
+
+/* .image {
+  position: relative;
+  background-image: url(https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?cs=srgb&dl=pexels-paul-ijsendoorn-33041.jpg&fm=jpg);
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.image:hover .overlay {
+  top: 0;
+} */
